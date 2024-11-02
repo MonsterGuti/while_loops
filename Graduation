@@ -1,0 +1,17 @@
+student_name = input()
+score = tries = 0
+grade = 1
+while True:
+    new_score = float(input())
+    if new_score < 4:
+        tries += 1
+        if tries > 1:
+            print(f"{student_name} has been excluded at {grade} grade")
+            break
+        continue
+    score += new_score
+    if grade == 12:
+        print(f"{student_name} graduated. Average grade: {(score/12):.2f}")
+        break
+
+    grade += 1
