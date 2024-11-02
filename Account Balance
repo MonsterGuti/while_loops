@@ -1,0 +1,30 @@
+# increase = input()
+# balance = 0.0
+#
+# while increase != "NoMoreMoney":
+#     increase = float(increase)
+#
+#     if increase < 0:
+#         print("Invalid operation!")
+#         break
+#
+#     balance += increase
+#     print(f"Increase: {increase:.2f}")
+#     increase = input()
+#
+# print(f"Total: {balance:.2f}")
+
+
+balance = 0.0
+
+while True:
+    increase = input()
+    if increase == "NoMoreMoney":
+        break
+    increase = float(increase)
+    if increase < 0:
+        print("Invalid operation!")
+        break
+    balance += increase
+    print(f"Increase: {increase:.2f}")
+print(f"Total: {balance:.2f}")
