@@ -1,0 +1,20 @@
+target_book = input()
+book_checked = 0
+command = input()
+is_book_found = False
+while command != "No More Books":
+    book = command
+
+    if book == target_book:
+        is_book_found = True
+        break
+
+    book_checked += 1
+
+    command = input()
+
+if is_book_found:
+    print(f"You checked {book_checked} books and found it.")
+else:
+    print("The book you search is not here!")
+    print(f"You checked {book_checked} books.")
